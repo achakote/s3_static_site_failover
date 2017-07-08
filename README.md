@@ -13,11 +13,11 @@
 
     1. Create a new SNS subscription for Lambda Function:
 
-        aws sns subscribe --topic-arn "YourSNSTopicARN" --protocol lambda --notification-endpoint "YourLambdaARN" --region "us-east-1"
+            aws sns subscribe --topic-arn "YourSNSTopicARN" --protocol lambda --notification-endpoint "YourLambdaARN" --region "us-east-1"
 
     1. Create Lambda invoke permissions for SNS to invoke function:
 
-        aws lambda add-permission --function-name "YourLambdaARN" --statement-id "HealthCheck_SNS_Lambda" --action "lambda:InvokeFunction" --principal "sns.amazonaws.com" --source-arn "YourSNSTopicARN" 
+            aws lambda add-permission --function-name "YourLambdaARN" --statement-id "HealthCheck_SNS_Lambda" --action "lambda:InvokeFunction" --principal "sns.amazonaws.com" --source-arn "YourSNSTopicARN" 
 
 1. Ensure both bucket policies allow for public read access on the bucket. 
 
