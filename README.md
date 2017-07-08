@@ -1,4 +1,4 @@
-# s3_static_site_failover
+s3 static site failover
 
 Goal: Create a failover scenario for s3 hosted site for Disaster Recovery.
 
