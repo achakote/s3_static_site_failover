@@ -1,6 +1,6 @@
-<h1>**s3 static site failover**
+s3 static site failover
 
-<h2>**Goal**: Create a failover scenario for s3 hosted site for Disaster Recovery.
+Goal: Create a failover scenario for s3 hosted site for Disaster Recovery.
 
 Steps:
 
